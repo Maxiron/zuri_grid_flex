@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+/* main {
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+} */
+
+@media (max-width: 800px) {
+   section {
+     flex-direction: column;
+   }
+   box1 {
+      border-radius: 0px;
+   }
+ }
+
+section {
+    display: flex;
+    width: 100%;
+    max-width: 780px;
+    height: 100vh;
+    max-height: 450px;
+    background-color: white;
+    margin: 20px;
+    padding: 40px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+    
+ }
+
+ .box1 {
+    background-color: #c26223;
+    flex: 1;
+    height: 400px;
+    flex-basis: 80px;
+    text-align: center;
+     /* top left, top right, bottom right, bottom left */
+    border-radius: 7px 0px 0px 7px;
+
+ }
+
+ .box2 {
+    background-color: #104147;
+    flex: 1;
+    height: 400px;
+    flex-basis: 80px;
+    text-align: center;
+ }
+
+ .box3 {
+    background-color: #0b2e26;
+    flex: 1;
+    height: 400px;
+    flex-basis: 80px;
+    text-align: center;
+    border-radius: 0px 7px 7px 0px;
+ }
+ img {
+   height: 30px;
+   margin-top: 35px;
+   margin-bottom: 0px;
+   margin-right: 100px;
+ }
+
+ h2 {
+    font-size: 35px;
+    font-family: 'Big Shoulders Display', cursive;
+    color: white;
+    height: 45px;
+    margin-top: 25px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    text-align: left;
+ }
+
+ button {
+    border-radius: 50px;
+    border: 2px white solid;
+    transition-duration: 0.4s;
+    height: 40px;
+    width: 120px;
+    margin-top: 40px;
+    margin-right: 40px;
+ }
+ 
+ button:hover{
+    background-color: rgba(255,255,255,0);
+    cursor: pointer;
+ }
+ button:hover p1{
+    color: white;
+ }
+ button:hover p2{
+    color: white;
+   }
+   button:hover p3{
+    color: white;
+   }
+
+p {
+   /*font-family: 'Big Shoulders Display', cursive;*/
+   color: white;
+   font-style: normal;
+   font-size: 15px;
+   margin-left: 35px;
+   text-align: left;
+   line-height: 10px;
+}
+
+ button p1 {
+    color: #c26223;
+ }
+ button p2 {
+    color: #104147;
+ }
+ button p3 {
+    color: #0b2e26;
+ }
